@@ -1,0 +1,55 @@
+.hdpf-filters {
+	margin: 0 0 1.5em;
+	padding: 1em 1.25em;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25em;
+	align-items: flex-start;
+	font-size: .92em;
+}
+
+.hdpf-group {
+	display: flex;
+	flex-direction: column;
+	gap: .25em;
+	min-width: 8em;
+}
+
+.hdpf-group__title {
+	font-weight: 600;
+	margin-bottom: .15em;
+}
+
+.hdpf-group label {
+	display: block;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.hdpf-group--price label {
+	display: inline-flex;
+	align-items: center;
+	gap: .35em;
+}
+
+.hdpf-group--price input[type="number"] {
+	width: 6em;
+}
+
+.hdpf-actions {
+	display: flex;
+	align-items: center;
+	gap: .75em;
+	align-self: center;
+}
+
+.hdpf-clear {
+	font-size: .9em;
+}
+
+.hdpf-filters.hdpf-loading {
+	opacity: .55;
+	pointer-events: none;
+}
