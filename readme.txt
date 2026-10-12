@@ -16,8 +16,8 @@ Filter the shop by attribute, price, category, stock and rating. Every filter is
 
 HDWebmobile Product Filters adds a filter panel to your shop and product-category pages. Shoppers narrow the product grid by price range, product category, product attributes (colour, size and so on), stock status, on-sale, and minimum rating. With JavaScript enabled the grid updates without a full page reload; with it disabled the same filters still work as ordinary links.
 
-= Why this plugin exists =
-Shop-filter plugins take input straight from the URL on a public, unauthenticated page, which makes them a common home for SQL injection. "Product Filter for WooCommerce by WBW" (versions before 3.1.3) shipped CVE-2025-8416 and CVE-2026-3830: a filter parameter from an unauthenticated visitor was concatenated into a raw SQL statement with no escaping or preparation, turning the storefront filter into a database-read primitive.
+= Security by design =
+Shop-filter plugins take input straight from the URL on a public, unauthenticated page, which makes them a common home for SQL injection: a filter parameter from an unauthenticated visitor concatenated into a raw SQL statement with no escaping or preparation turns the storefront filter into a database-read primitive.
 
 This plugin closes that entire class of bug by construction:
 
