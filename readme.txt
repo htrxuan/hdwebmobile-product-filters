@@ -38,6 +38,9 @@ This plugin closes that entire class of bug by construction:
 * No filter result counts per option in this version
 * Attribute filters cover global product attributes (the `pa_*` taxonomies), not per-product custom attributes
 
+= Enjoying this plugin? =
+If it helps your site, please consider [leaving an honest review on WordPress.org](https://wordpress.org/support/plugin/hdwebmobile-product-filters/reviews/#new-post) -- it helps other WordPress users find it. Found a problem or have an idea? Please [open a support topic](https://wordpress.org/support/plugin/hdwebmobile-product-filters/) first so it can be fixed.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-product-filters` directory, or install the plugin through the WordPress plugins screen directly.
