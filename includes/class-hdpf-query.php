@@ -10,10 +10,9 @@ if (!defined('ABSPATH')) {
  * Reads the active shop filters from the query string and applies them to WooCommerce's own
  * product query.
  *
- * CVE-2025-8416 / CVE-2026-3830 in "Product Filter for WooCommerce by WBW" (< 3.1.3): a
- * filter parameter from a public, unauthenticated request was concatenated into a raw SQL
- * statement without escaping or preparation, giving an unauthenticated visitor a SQL
- * injection point on the storefront.
+ * The risk this guards against: concatenating a filter parameter from a public,
+ * unauthenticated request into a raw SQL statement without escaping or preparation, which
+ * gives any visitor a SQL injection point on the storefront.
  *
  * This class closes that entire class of bug by construction: it NEVER builds a SQL string
  * and NEVER touches $wpdb. Every filter is turned into standard WP_Query arguments

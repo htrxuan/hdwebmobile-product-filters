@@ -12,7 +12,7 @@ Adds a filter panel to the shop and product-category pages. Shoppers narrow the 
 
 ## Why this plugin exists
 
-Shop-filter plugins read input straight from the URL on a public page, which makes them a frequent home for SQL injection. "Product Filter for WooCommerce by WBW" (< 3.1.3) shipped CVE-2025-8416 / CVE-2026-3830 — an unauthenticated filter parameter concatenated into a raw SQL statement.
+Shop-filter plugins read input straight from the URL on a public page, which makes them a frequent home for SQL injection -- an unauthenticated filter parameter concatenated into a raw SQL statement.
 
 This plugin closes that class by construction:
 
